@@ -1,0 +1,9 @@
+log_path: STDOUT
+log_level: debug
+plugins:
+  - type: slack
+    webhook_url: https://hooks.slack.com/services/XXXXX/XXXXX/XXXXX
+    subject: "FAILURE: [${hostname}] ${command}"
+    icon_emoji: ":innocent:"
+    http_options:
+        open_timeout: 10
